@@ -53,6 +53,13 @@ a {
   gap: 24px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -83,6 +90,34 @@ nav a {
 
 nav a:hover,
 nav a:focus {
+  color: var(--text);
+}
+
+.language-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--panel);
+}
+
+.language-switch a {
+  min-width: 42px;
+  padding: 7px 10px;
+  color: var(--muted);
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.language-switch a + a {
+  border-left: 1px solid var(--border);
+}
+
+.language-switch a[aria-current="true"] {
+  background: var(--panel-soft);
   color: var(--text);
 }
 
@@ -201,13 +236,21 @@ footer {
 
 @media (max-width: 760px) {
   .topbar-inner {
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
     padding: 14px 0;
   }
 
+  .header-actions {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
   nav {
     flex-wrap: wrap;
+    flex: 1 1 auto;
+    gap: 12px;
   }
 
   .hero {

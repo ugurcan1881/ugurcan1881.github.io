@@ -180,7 +180,7 @@ h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   margin-top: 28px;
 }
@@ -220,6 +220,27 @@ h3 {
   border-left: 4px solid var(--accent);
   background: var(--panel-soft);
 }
+
+.loss-warning { border-color: var(--gold); color: #f5d69c; }
+.deletion-page { max-width: 960px; margin: 0 auto; }
+.request-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.request-fields label:last-child { grid-column: 1 / -1; }
+.deletion-page label { display: block; font-size: 14px; color: var(--muted); }
+.deletion-page input:not([type="checkbox"]), .deletion-page textarea {
+  display: block; width: 100%; margin-top: 8px; padding: 12px;
+  font: inherit; color: var(--text); background: var(--background);
+  border: 1px solid var(--border); border-radius: 8px;
+}
+.deletion-page textarea { resize: vertical; min-height: 170px; }
+.deletion-page .consent-row { display: flex; gap: 14px; align-items: flex-start; margin: 26px 0; padding: 18px; background: var(--panel-soft); border-radius: 10px; color: var(--text); }
+.consent-row input { width: 22px; height: 22px; flex: 0 0 auto; margin: 2px 0 0; accent-color: var(--accent); }
+.request-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.request-actions button { padding: 13px 20px; border: 1px solid var(--border); border-radius: 8px; background: var(--panel-soft); color: var(--text); font: inherit; font-weight: 700; cursor: pointer; }
+.request-actions button[type="submit"] { background: var(--accent); border-color: var(--accent); }
+.request-actions button:disabled { opacity: .45; cursor: default; }
+.deletion-page :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+#request-status { min-height: 3em; color: var(--muted); font-size: 14px; }
+@media (max-width: 560px) { .request-fields { grid-template-columns: 1fr; } .request-actions button { width: 100%; } }
 
 footer {
   border-top: 1px solid var(--border);

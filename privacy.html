@@ -9,16 +9,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html"><img src="assets/store-icon.png" alt="FCM"><span>Football Club Manager</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav><div class="language-switch" aria-label="Language"><a href="privacy.html" aria-current="true">EN</a><a href="tr/privacy.html" lang="tr">TR</a></div></div></div></header>
+  <header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html"><img src="assets/store-icon.png" alt="FCM"><span>Football Club Manager</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="account-deletion.html">Delete account</a></nav><div class="language-switch" aria-label="Language"><a href="privacy.html" aria-current="true">EN</a><a href="tr/privacy.html" lang="tr">TR</a></div></div></div></header>
   <main class="page"><article class="legal">
     <p class="eyebrow">CHEPNI STUDIO</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated and effective: September 15, 2026</p>
+    <p class="updated">Last updated and effective: October 31, 2026</p>
     <p>This Privacy Policy explains the data-processing practices of the Football Club Manager mobile game provided by Chepni Studio.</p>
 
     <h2>1. Information we collect and process</h2>
     <h3>Game data stored on your device</h3>
-    <p>The game stores career saves, manager and club information, game progress, squads, fixtures, statistics, language and audio preferences, Gold and consumable balances, purchased permanent entitlements, and installed data-pack preferences on your device. This local game data is not sent to Chepni Studio servers.</p>
+    <p>Career saves, manager and club information, squads, fixtures, statistics, language/audio preferences and installed data packs are stored on your device. Automatic cloud backup of career saves is not currently provided. Some versions also keep a local wallet copy and purchased entitlements on the device; the account and wallet data described below are separate.</p>
+    <h3>Google sign-in and game account</h3><p>Google Play Games and Unity Authentication verify your Google sign-in and assign your game a player identifier. These providers may process player identifiers, linked identity-provider information, authentication information, and session/network diagnostics. The game may display your profile name and avatar provided through Play Games. We do not receive your Google password. Player identifiers and short-lived authentication tokens may be used to verify server sessions.</p>
+    <h3>Account-linked cloud wallet</h3><p>In versions with cloud wallet enabled, your player identifier, Gold and consumable inventory, permanent entitlements, reward/spend records, and purchase/refund transaction identifiers, purchase tokens and validation status are processed using Supabase (hosted Postgres and server-side Edge Functions). Some deployments may use Google Cloud instead; both serve the same account-wallet purpose. This links balances to your account, restores eligible content and prevents duplicate transaction rewards. The cloud wallet needs an internet connection. Google sign-in alone does not mean your local balance or career saves have been backed up; check the wallet status shown in the game.</p>
+    <p><a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase Privacy Policy</a></p><p><a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase Privacy Policy</a></p><h3>Support and deletion requests</h3><p>When you contact support, we process your email address, message, optional player identifier and evidence you provide to resolve your request and verify ownership. Do not send passwords, verification codes or payment-card details. The web request tool does not automatically submit data; it prepares an email draft on your device.</p>
     <p>You may delete local data by clearing the app's data in Android settings or uninstalling the app. This may permanently remove your career saves and other local progress.</p>
 
     <h3>Advertising</h3>
@@ -29,7 +32,7 @@
     <h3>In-app purchases</h3>
     <p>In-app purchases are processed through Google Play using Unity In-App Purchasing 5.4. Chepni Studio does not see or store your payment card or bank-account details; payments are processed by Google Play.</p>
     <p>To provide purchase functionality, verify transactions, deliver and restore entitlements, and prevent fraud, Unity IAP may process approximate location, email address, personal or installation identifiers, device and session information, country, purchase history, crash logs, diagnostics, and other app-performance data. Google Play also processes transactions under its own terms and privacy policy.</p>
-    <p><a href="https://unity.com/legal/privacy-policy" rel="noopener noreferrer">Unity Privacy Policy</a> · <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></p>
+    <p><a href="https://unity.com/legal/privacy-policy" rel="noopener noreferrer">Unity Privacy Policy</a> Â· <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></p>
 
     <h3>Data packs and external links</h3>
     <p>The game may connect to catalog and release files hosted on GitHub to list and download optional community data packs. It may also connect to direct HTTPS data-pack addresses supplied by users. Operators of these services may process IP addresses, request times, and standard device or network logs under their own privacy policies.</p>
@@ -40,7 +43,7 @@
     <p>Information is processed to operate the game and save system, preserve preferences, deliver and restore purchased content, display and measure advertising, maintain security, diagnose errors, and prevent abuse and fraud.</p>
 
     <h2>3. Data sharing</h2>
-    <p>Chepni Studio does not sell your local career data. The information described above may be processed by Google, Unity, Google Play, and optional data-pack hosting providers only as necessary to provide their relevant functions. Their own terms and privacy policies apply.</p>
+    <p>Chepni Studio does not sell your local career data. The information described above may be processed by Google, Unity, Supabase, Google Play, and optional data-pack hosting providers only as necessary to provide their relevant functions. Their own terms and privacy policies apply.</p>
 
     <h2>4. Data retention</h2>
     <p>Local game data remains on your device until you delete it or uninstall the app. Retention periods for information processed by Google and Unity are governed by those providers' policies. Some transaction records may be retained for longer where required by law, security, or purchase-record obligations.</p>
@@ -56,14 +59,14 @@
     <p>Depending on your request, we may direct you to the request channels of Google or Unity, which process the relevant information.</p>
 
     <h2>8. International data transfers</h2>
-    <p>Providers such as Google, Unity, and GitHub may process information outside the country where you live. These transfers take place under the providers' applicable legal mechanisms and policies.</p>
+    <p>Providers such as Google, Unity, Supabase, and GitHub may process information outside the country where you live. These transfers take place under the providers' applicable legal mechanisms and policies.</p>
 
     <h2>9. Changes to this policy</h2>
     <p>We may update this policy when the game's features, services, or legal requirements change. The current version is published on this page, with its effective date shown above.</p>
 
     <h2>10. Contact</h2>
     <div class="callout"><strong>Publisher:</strong> Chepni Studio<br><strong>Email:</strong> <a href="mailto:chepnistudio@outlook.com">chepnistudio@outlook.com</a></div>
-  </article></main>
-  <footer><div class="footer-inner"><span>© 2026 Chepni Studio</span><a href="index.html">Home</a></div></footer>
+  <h2>Delete your game account</h2><p>You can <a href="account-deletion.html">request account deletion</a> without reinstalling the game. Sending a request does not instantly delete the account. After ownership verification, the game account and associated cloud data are deleted; remaining Gold and consumable packs are lost. Your Google account is not closed and deletion does not automatically refund purchases.</p></article></main>
+  <footer><div class="footer-inner"><span>Â© 2026 Chepni Studio</span><a href="index.html">Home</a></div></footer>
 </body>
 </html>
